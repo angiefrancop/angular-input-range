@@ -1,1 +1,10 @@
-<input type="range" max="5" (change)="changeZoom($event)" />
+<input
+  class="bc-slider"
+  type="range"
+  max="30000000"
+  min="0"
+  step="100000"
+  value="30000000"
+  (change)="changeZoom($event)"
+  [ngStyle]="{ 'background-size': valueP + '%' }"
+/>

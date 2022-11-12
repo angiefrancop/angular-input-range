@@ -7,7 +7,8 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-  changeZoom(event) {
-    console.log(event.target.value);
+  showValue(value: number) {
+    console.log('outputValue event-->', value);
+    this.name = value.toString();
   }
 }
